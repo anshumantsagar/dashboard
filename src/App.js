@@ -145,7 +145,7 @@ class App extends Component {
         return (
           <tr key={person.id}>
               <td>{person.name}</td>
-              <td>{person.designation}</td>
+              <td>{person.department}</td>
               <td><input className={classes.Input} type="checkbox" checked={person.avilable} onChange={() => this.changeAvailability(index)}/></td>
               <td>
                 <button className={classes.GreenButton} onClick={() => this.makeEditReady(index)}>Edit</button>
