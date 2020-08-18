@@ -91,6 +91,7 @@ class App extends Component {
     let newList = this.state.employeeList
     newList.splice(key,1);
     this.setState({employeeList:newList});
+    this.checkAvilable();
   }
 
   cancel = () => {
